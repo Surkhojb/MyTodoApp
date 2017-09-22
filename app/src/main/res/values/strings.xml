@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MyTodoApp</string>
+    <string name="list_title">List</string>
+    <string name="statistics_title">Statistics</string>
+    <string name="navigation_view_header_title">Todo App</string>
+    <string name="no_tasks_all">Task list empty</string>
+    <string name="no_tasks_add">No task added yet</string>
+    <string name="title_hint">Title</string>
+    <string name="description_hint">Description</string>
+</resources>
