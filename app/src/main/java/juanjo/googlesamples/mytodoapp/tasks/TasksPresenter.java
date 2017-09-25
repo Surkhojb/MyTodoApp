@@ -62,14 +62,13 @@ class TasksPresenter implements TaskContract.Presenter {
     public void openTaskDetails(@NonNull Task requestedTask) {
 
     }
-    //TODO Update task as completed
     @Override
     public void completeTask(@NonNull Task completedTask) {
-
+        repository.completeTask(completedTask);
     }
-    //TODO Create drawable to change background color for active and no active tasks
     @Override
     public void activateTask(@NonNull Task activeTask) {
+        repository.activateTask(activeTask);
 
     }
     //TODO Clear completed tasks on database

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -67,20 +68,17 @@ public class AddEditTaskFragment extends Fragment implements AddTaskEditContract
         this.presenter = presenter;
     }
 
-    //TODO: Show message from presenter response
     @Override
     public void showMessage(String message) {
-
+        Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
     }
-    //TODO: Show message error from presenter response
     @Override
     public void showError(String message) {
-
+        Toast.makeText(getActivity(),message,Toast.LENGTH_SHORT).show();
     }
     //TODO: Show empty task
     @Override
     public void showEmptyTaskError() {
-
     }
 
     @Override
